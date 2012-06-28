@@ -6,7 +6,7 @@
 
 			<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 
-			<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
+			<?php include (TEMPLATEPATH . '/media/inc/meta.php' ); ?>
 
 			<div class="entry">
 				<?php the_content(); ?>
@@ -14,7 +14,7 @@
 
 			<footer class="postmetadata">
 				<?php the_tags('Tags: ', ', ', '<br />'); ?>
-				Posted in <?php the_category(', ') ?> | 
+				Posted in <?php the_category(', ') ?> |
 				<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
 			</footer>
 
@@ -22,7 +22,7 @@
 
 	<?php endwhile; ?>
 
-	<?php include (TEMPLATEPATH . '/_/inc/nav.php' ); ?>
+	<?php include (TEMPLATEPATH . '/media/inc/nav.php' ); ?>
 
 	<?php else : ?>
 

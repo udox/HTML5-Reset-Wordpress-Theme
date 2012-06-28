@@ -24,18 +24,18 @@
 
 			<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
 				<h2 class="pagetitle">Blog Archives</h2>
-			
+
 			<?php } ?>
 
-			<?php include (TEMPLATEPATH . '/_/inc/nav.php' ); ?>
+			<?php include (TEMPLATEPATH . '/media/inc/nav.php' ); ?>
 
 			<?php while (have_posts()) : the_post(); ?>
-			
+
 				<article <?php post_class() ?>>
-				
+
 						<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-					
-						<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
+
+						<?php include (TEMPLATEPATH . '/media/inc/meta.php' ); ?>
 
 						<div class="entry">
 							<?php the_content(); ?>
@@ -45,8 +45,8 @@
 
 			<?php endwhile; ?>
 
-			<?php include (TEMPLATEPATH . '/_/inc/nav.php' ); ?>
-			
+			<?php include (TEMPLATEPATH . '/media/inc/nav.php' ); ?>
+
 	<?php else : ?>
 
 		<h2>Nothing found</h2>
